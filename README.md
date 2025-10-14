@@ -5,6 +5,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 ## ✨ Features
 
 ### 🏠 Frontend Features
+
 - **Modern Responsive Design** - Mobile-first approach with Tailwind CSS
 - **Interactive Animations** - Smooth transitions powered by Framer Motion
 - **Dynamic Gallery** - Image management with ImageKit integration
@@ -14,6 +15,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 - **Dark Theme** - Modern dark UI with elegant styling
 
 ### 🔧 Admin Dashboard
+
 - **Comprehensive CMS** - Full content management system
 - **Statistics Dashboard** - Real-time analytics and insights
 - **Image Upload & Management** - Bulk image operations with ImageKit
@@ -22,6 +24,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 - **Quick Actions** - Fast navigation between management sections
 
 ### 🎨 Technical Features
+
 - **Server-Side Rendering** - Optimized performance with Next.js 15
 - **API Routes** - RESTful API with built-in validation
 - **Database Integration** - MongoDB with Mongoose ODM
@@ -32,6 +35,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 ## 🚀 Tech Stack
 
 ### Frontend
+
 - **Framework**: Next.js 15.5.5 with Turbopack
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
@@ -41,6 +45,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 - **Form Handling**: React Hook Form + Zod
 
 ### Backend
+
 - **API**: Next.js API Routes
 - **Database**: MongoDB with Mongoose
 - **Authentication**: JWT + bcryptjs
@@ -48,6 +53,7 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 - **Validation**: Zod schemas
 
 ### Development Tools
+
 - **Build Tool**: Turbopack (Next.js 15)
 - **Linting**: ESLint
 - **Package Manager**: npm/yarn/pnpm
@@ -56,19 +62,22 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 ## 📦 Installation
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - MongoDB database
 - ImageKit account (for image management)
 
 ### Setup Instructions
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/muh-habeeb/ehinospark.git
    cd ehinospark/ethinicweb
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -79,37 +88,34 @@ A modern, responsive web application for cultural events and ethnic festivals, b
 
 3. **Environment Configuration**
    Create a `.env.local` file in the root directory:
+
    ```env
    # Database
    MONGODB_URI=your_mongodb_connection_string
-   
+
    # JWT Secret
    JWT_SECRET=your_jwt_secret_key
-   
+
    # ImageKit Configuration
    IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
    IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
    IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
-   
+
    # Admin Credentials
    ADMIN_EMAIL=admin@ethnospark.com
    ADMIN_PASSWORD=your_admin_password
    ```
 
 4. **Database Setup**
+
    ```bash
-   # The application will automatically create the required collections
-   # You can seed initial data using the API endpoint:
-   curl -X POST http://localhost:3000/api/seed
+   check the seed_data folder for json files >copy and insert to the mongo DB
    ```
 
 5. **Run the development server**
+
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
    ```
 
 6. **Access the application**
@@ -141,6 +147,7 @@ ethinicweb/
 ## 🎯 Usage
 
 ### For Administrators
+
 1. Navigate to `/admin` to access the admin panel
 2. Login with your admin credentials
 3. Use the dashboard to manage:
@@ -151,6 +158,7 @@ ethinicweb/
    - Website hero section content
 
 ### For Developers
+
 1. **Adding new components**: Place in appropriate `components/` subdirectory
 2. **Creating API endpoints**: Add to `src/app/api/` directory
 3. **Database models**: Define in `src/lib/` directory
@@ -159,6 +167,7 @@ ethinicweb/
 ## 🔐 Authentication
 
 The application uses JWT-based authentication for admin access:
+
 - Secure password hashing with bcryptjs
 - Protected routes with middleware
 - Session management with HTTP-only cookies
@@ -167,6 +176,7 @@ The application uses JWT-based authentication for admin access:
 ## 📱 Responsive Design
 
 ETHNOSPARK is built with a mobile-first approach:
+
 - **Mobile**: Optimized touch interfaces and navigation
 - **Tablet**: Adaptive layouts for medium screens
 - **Desktop**: Full-featured interface with enhanced UX
@@ -174,6 +184,7 @@ ETHNOSPARK is built with a mobile-first approach:
 ## 🖼️ Image Management
 
 Integrated with ImageKit for optimized image handling:
+
 - Automatic image optimization
 - CDN delivery for fast loading
 - Bulk upload capabilities
@@ -208,11 +219,13 @@ npm run lint
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Connect your GitHub repository to Vercel
 2. Configure environment variables in Vercel dashboard
 3. Deploy automatically on push to main branch
 
 ### Manual Deployment
+
 1. Build the application: `npm run build`
 2. Start production server: `npm run start`
 3. Configure reverse proxy (nginx/Apache)
@@ -240,6 +253,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📞 Support
 
 For support and questions:
+
 - Create an issue in the GitHub repository
 - Contact the development team
 - Check the documentation for common solutions
@@ -247,6 +261,7 @@ For support and questions:
 ## 🔄 Changelog
 
 ### v0.1.0 (Current)
+
 - Initial release with core features
 - Admin dashboard implementation
 - Responsive design across all devices
