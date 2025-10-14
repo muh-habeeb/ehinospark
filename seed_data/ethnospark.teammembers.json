@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053169"
+  },
+  "name": "Dr. Rajesh Kumar",
+  "role": "Event Coordinator",
+  "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+  "bio": "Professor of Cultural Studies with 15 years of experience in organizing cultural events.",
+  "isActive": true,
+  "order": 1,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05316a"
+  },
+  "name": "Ms. Priya Sharma",
+  "role": "Cultural Activities Head",
+  "image": "https://avatar.iran.liara.run/public",
+  "bio": "Expert in traditional Indian arts and culture with a passion for preserving heritage.",
+  "isActive": true,
+  "order": 2,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05316b"
+  },
+  "name": "Mr. Arjun Patel",
+  "role": "Technical Coordinator",
+  "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+  "bio": "Handles all technical aspects including sound, lighting, and stage management.",
+  "isActive": true,
+  "order": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05316c"
+  },
+  "name": "Ms. Ashwini Reddy",
+  "role": "Faculty Advisor",
+  "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+  "bio": "Senior faculty member guiding the organizing committee.",
+  "isActive": true,
+  "order": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05316d"
+  },
+  "name": "Mr. Kiran Singh",
+  "role": "Logistics Head",
+  "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+  "bio": "Manages all logistics, venue setup, and coordination.",
+  "isActive": true,
+  "order": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05316e"
+  },
+  "name": "Ms. Meera Joshi",
+  "role": "Publicity Coordinator",
+  "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  "bio": "Handles marketing, social media, and event promotion.",
+  "isActive": true,
+  "order": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.672Z"
+  }
+}]

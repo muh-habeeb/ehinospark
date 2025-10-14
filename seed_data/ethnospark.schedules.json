@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053156"
+  },
+  "time": "9:00 AM",
+  "title": "Registration & Welcome",
+  "description": "Registration opens and welcome refreshments.",
+  "location": "Main Entrance",
+  "isActive": true,
+  "order": 1,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.666Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T18:00:19.886Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053157"
+  },
+  "time": "10:00 AM",
+  "title": "Inauguration",
+  "description": "Welcome address and lighting ceremony.",
+  "location": "Main Auditorium",
+  "isActive": true,
+  "order": 2,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.666Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.666Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053158"
+  },
+  "time": "11:00 AM",
+  "title": "Cultural Performances Begin",
+  "description": "Group dances, solo songs, and traditional skits.",
+  "location": "Main Stage",
+  "isActive": true,
+  "order": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053159"
+  },
+  "time": "12:30 PM",
+  "title": "Food Festival Opens",
+  "description": "Traditional food stalls open for everyone.",
+  "location": "Food Court",
+  "isActive": true,
+  "order": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05315a"
+  },
+  "time": "1:00 PM",
+  "title": "Ethnic Fashion Walk",
+  "description": "Showcasing traditional attires across India.",
+  "location": "Fashion Runway",
+  "isActive": true,
+  "order": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05315b"
+  },
+  "time": "2:30 PM",
+  "title": "Art & Craft Workshops",
+  "description": "Hands-on workshops for painting, rangoli, and crafts.",
+  "location": "Art Gallery",
+  "isActive": true,
+  "order": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05315c"
+  },
+  "time": "4:00 PM",
+  "title": "Team Competitions",
+  "description": "Fun team-based cultural competitions.",
+  "location": "Open Ground",
+  "isActive": true,
+  "order": 7,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05315d"
+  },
+  "time": "5:30 PM",
+  "title": "Award Ceremony",
+  "description": "Recognition for the best performances and creative entries.",
+  "location": "Main Auditorium",
+  "isActive": true,
+  "order": 8,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05315e"
+  },
+  "time": "6:30 PM",
+  "title": "Musical Night",
+  "description": "Grand musical performances to end the day.",
+  "location": "Open Air Theater",
+  "isActive": true,
+  "order": 9,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.667Z"
+  }
+}]

@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053170"
+  },
+  "text": "🎉 Registration for ETHNOSPARK 2025 is now open! Register before January 15th to secure your spot.",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053171"
+  },
+  "text": "🎵 Special guest artist Padma Shri Ustad Rahman Khan will be performing at our Musical Night!",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053172"
+  },
+  "text": "👗 Free traditional costumes will be provided for the fashion walk. Contact the organizing committee for details.",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053173"
+  },
+  "text": "🍽️ Food stalls featuring cuisine from 15 different Indian states will be available throughout the day.",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053174"
+  },
+  "text": "🏆 Exciting prizes await winners in various categories including Best Performance, Best Costume, and Best Art.",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.674Z"
+  }
+}]

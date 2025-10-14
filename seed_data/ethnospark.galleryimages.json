@@ -1,0 +1,153 @@
+[{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053160"
+  },
+  "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+  "alt": "Traditional dance performance",
+  "caption": "Students performing classical dance",
+  "isActive": true,
+  "order": 1,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053161"
+  },
+  "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96",
+  "alt": "Art and craft display",
+  "caption": "Beautiful rangoli patterns",
+  "isActive": true,
+  "order": 2,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053162"
+  },
+  "url": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a",
+  "alt": "Fashion show",
+  "caption": "Ethnic fashion showcase",
+  "isActive": true,
+  "order": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053163"
+  },
+  "url": "https://images.unsplash.com/photo-1471478331149-c72f17e33c73",
+  "alt": "Musical performance",
+  "caption": "Live music performance",
+  "isActive": true,
+  "order": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053164"
+  },
+  "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+  "alt": "Traditional food",
+  "caption": "Delicious traditional cuisine",
+  "isActive": true,
+  "order": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053165"
+  },
+  "url": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0",
+  "alt": "Art workshop",
+  "caption": "Students creating art",
+  "isActive": true,
+  "order": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T18:15:17.073Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053166"
+  },
+  "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+  "alt": "Traditional attire",
+  "caption": "Beautiful traditional costumes",
+  "isActive": true,
+  "order": 7,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053167"
+  },
+  "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+  "alt": "Cultural event",
+  "caption": "Cultural celebration moments",
+  "isActive": true,
+  "order": 8,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.669Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee917958258eedf6e2bcd8"
+  },
+  "url": "https://images.unsplash.com/photo-1546778316-dfda79f1c84e",
+  "alt": "12",
+  "caption": "ad",
+  "isActive": true,
+  "order": 5,
+  "createdAt": {
+    "$date": "2025-10-14T18:07:53.425Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T18:07:53.425Z"
+  },
+  "__v": 0
+}]

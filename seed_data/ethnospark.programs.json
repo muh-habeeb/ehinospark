@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05314d"
+  },
+  "name": "Traditional Dance",
+  "description": "A vibrant performance showcasing folk dances from various cultures.",
+  "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad",
+  "time": "10:00 AM - 11:00 AM",
+  "location": "Main Auditorium",
+  "isActive": true,
+  "order": 1,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05314e"
+  },
+  "name": "Ethnic Fashion Walk",
+  "description": "Students represent the essence of Indian culture through traditional attire.",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+  "time": "11:30 AM - 12:30 PM",
+  "location": "Fashion Runway",
+  "isActive": true,
+  "order": 2,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T17:45:48.006Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d05314f"
+  },
+  "name": "Live Art & Craft",
+  "description": "Creative expressions through painting, mehndi, rangoli, and sketching.",
+  "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0",
+  "time": "1:00 PM - 3:00 PM",
+  "location": "Art Gallery",
+  "isActive": true,
+  "order": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053150"
+  },
+  "name": "Musical Night",
+  "description": "Melodious performances by students and faculty, ending the day on a high note.",
+  "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f",
+  "time": "6:00 PM - 8:00 PM",
+  "location": "Open Air Theater",
+  "isActive": true,
+  "order": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053151"
+  },
+  "name": "Pot Painting",
+  "description": "Creative pot painting workshop with traditional designs.",
+  "image": "https://i.pinimg.com/736x/a8/f9/d4/a8f9d4651b6dc729c83b9df49f7f7a10.jpg",
+  "time": "2:00 PM - 4:00 PM",
+  "location": "Craft Corner",
+  "isActive": true,
+  "order": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053152"
+  },
+  "name": "Canvas Painting",
+  "description": "Express your creativity through canvas painting.",
+  "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262",
+  "time": "10:30 AM - 12:00 PM",
+  "location": "Art Studio",
+  "isActive": true,
+  "order": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053153"
+  },
+  "name": "Rangoli Designing",
+  "description": "Beautiful rangoli patterns and designs.",
+  "image": "https://images.unsplash.com/photo-1605362242548-3af0d67dd4c3",
+  "time": "9:00 AM - 11:00 AM",
+  "location": "Main Entrance",
+  "isActive": true,
+  "order": 7,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ee6ff87fa633139d053154"
+  },
+  "name": "Food Festival",
+  "description": "Taste traditional dishes from various cultures.",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+  "time": "12:00 PM - 2:00 PM",
+  "location": "Food Court",
+  "isActive": true,
+  "order": 8,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T15:44:56.661Z"
+  }
+}]
