@@ -244,11 +244,10 @@ export default function AdminDashboard() {
             <div className="flex flex-wrap w-full gap-2 justify-center items-center">
               <button
                 onClick={() => setActiveTab("overview")}
-                className={`cursor-pointer text-xs sm:text-sm whitespace-nowrap px-3 py-2 flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "overview"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`cursor-pointer text-xs sm:text-sm whitespace-nowrap px-3 py-2 flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "overview"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <LayoutDashboard className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="hidden sm:inline">Overview</span>
@@ -256,66 +255,60 @@ export default function AdminDashboard() {
               </button>
               <button
                 onClick={() => setActiveTab("hero")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "hero"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "hero"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Hero</span>
               </button>
               <button
                 onClick={() => setActiveTab("programs")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "programs"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "programs"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Programs</span>
               </button>
               <button
                 onClick={() => setActiveTab("schedule")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "schedule"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "schedule"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Schedule</span>
               </button>
               <button
                 onClick={() => setActiveTab("gallery")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "gallery"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "gallery"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <Images className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Gallery</span>
               </button>
               <button
                 onClick={() => setActiveTab("team")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "team"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "team"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <UserCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Team</span>
               </button>
               <button
                 onClick={() => setActiveTab("announcements")}
-                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${
-                  activeTab === "announcements"
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300"
-                }`}
+                className={`text-xs sm:text-sm whitespace-nowrap px-3 py-2 cursor-pointer flex-shrink-0 rounded-sm hover:bg-gray-700/50 transition-colors inline-flex items-center ${activeTab === "announcements"
+                  ? "bg-gray-700 text-white"
+                  : "text-gray-300"
+                  }`}
               >
                 <MessageSquare className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 flex-shrink-0" />
                 <span className="hidden sm:inline">Announcements</span>

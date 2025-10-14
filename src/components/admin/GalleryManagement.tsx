@@ -11,6 +11,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Save, Trash2, Plus, Edit, Images, Image as ImageIcon } from 'lucide-react';
 import { toast } from 'sonner';
 import Image from 'next/image';
+import ImageUpload from '@/components/ui/image-upload';
 
 interface GalleryImage {
     _id?: string;
@@ -330,16 +331,13 @@ export default function GalleryManagement() {
 
                     {editingImage && (
                         <div className="space-y-4">
-                            <div className="space-y-2">
-                                <Label htmlFor="url" className="text-gray-300">Image URL *</Label>
-                                <Input
-                                    id="url"
-                                    value={editingImage.url}
-                                    onChange={(e) => setEditingImage(prev => prev ? { ...prev, url: e.target.value } : null)}
-                                    placeholder="https://example.com/image.jpg"
-                                    className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                                />
-                            </div>
+                            <ImageUpload
+                                currentImageUrl={editingImage.url}
+                                onImageUploaded={(url) => setEditingImage(prev => prev ? { ...prev, url } : null)}
+                                folder="ethnospark/gallery"
+                                label="Gallery Image"
+                                placeholder="https://example.com/image.jpg"
+                            />
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
@@ -378,24 +376,6 @@ export default function GalleryManagement() {
                                     className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
                                 />
                             </div>
-
-                            {editingImage.url && (
-                                <div className="space-y-2">
-                                    <Label className="text-gray-300">Preview</Label>
-                                    <div className="aspect-video relative overflow-hidden rounded-lg border border-gray-600 bg-gray-700">
-                                        <Image
-                                            src={editingImage.url}
-                                            alt="Preview"
-                                            fill
-                                            className="object-cover"
-                                            unoptimized={true}
-                                            onError={(e) => {
-                                                console.error('Preview image failed to load:', editingImage.url, e);
-                                            }}
-                                        />
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     )}
 

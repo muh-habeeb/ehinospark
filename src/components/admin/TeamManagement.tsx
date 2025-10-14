@@ -11,6 +11,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Save, Trash2, Plus, Edit, Users, UserCircle, Loader } from 'lucide-react';
 import { toast } from 'sonner';
 import Image from 'next/image';
+import ImageUpload from '@/components/ui/image-upload';
 
 interface TeamMember {
   _id?: string;
@@ -273,13 +274,12 @@ export default function TeamManagement() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="image" className="text-gray-300">Profile Image URL</Label>
-                <Input
-                  id="image"
-                  value={editingMember.image}
-                  onChange={(e) => setEditingMember(prev => prev ? { ...prev, image: e.target.value } : null)}
+                <ImageUpload
+                  currentImageUrl={editingMember.image}
+                  onImageUploaded={(url) => setEditingMember(prev => prev ? { ...prev, image: url } : null)}
+                  folder="ethnospark/team"
+                  label="Profile Image"
                   placeholder="https://example.com/profile.jpg"
-                  className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
                 />
               </div>
 
@@ -294,20 +294,6 @@ export default function TeamManagement() {
                   className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
                 />
               </div>
-
-              {editingMember.image && (
-                <div className="space-y-2">
-                  <Label className="text-gray-300">Preview</Label>
-                  <div className="w-32 h-32 relative overflow-hidden rounded-full border border-gray-600 mx-auto">
-                    <Image
-                      src={editingMember.image}
-                      alt="Preview"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           )}
 

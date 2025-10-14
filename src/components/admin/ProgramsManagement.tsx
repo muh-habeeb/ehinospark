@@ -11,6 +11,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Save, Trash2, Plus, Edit, Calendar, MapPin, Loader } from 'lucide-react';
 import { toast } from 'sonner';
 import Image from 'next/image';
+import ImageUpload from '@/components/ui/image-upload';
 
 interface Program {
   _id?: string;
@@ -247,13 +248,12 @@ export default function ProgramsManagement() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="image" className="text-gray-300">Image URL</Label>
-                <Input
-                  id="image"
-                  value={editingProgram.image}
-                  onChange={(e) => setEditingProgram(prev => prev ? { ...prev, image: e.target.value } : null)}
+                <ImageUpload
+                  currentImageUrl={editingProgram.image}
+                  onImageUploaded={(url) => setEditingProgram(prev => prev ? { ...prev, image: url } : null)}
+                  folder="ethnospark/programs"
+                  label="Program Image"
                   placeholder="https://example.com/image.jpg"
-                  className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
                 />
               </div>
 
@@ -293,20 +293,6 @@ export default function ProgramsManagement() {
                   />
                 </div>
               </div>
-
-              {editingProgram.image && (
-                <div className="space-y-2">
-                  <Label className="text-gray-300">Preview</Label>
-                  <div className="aspect-video relative overflow-hidden rounded-lg border border-gray-600">
-                    <Image
-                      src={editingProgram.image}
-                      alt="Preview"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           )}
 

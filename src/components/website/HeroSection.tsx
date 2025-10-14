@@ -56,7 +56,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
               <div
                 className="w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: `url(${image.url})`,
+                  backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(${image.url})`,
                 }}
               />
             </div>
