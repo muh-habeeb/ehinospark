@@ -4,14 +4,15 @@ import { TeamMember } from '@/lib/models';
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
+    const { id } = await params;
     const data = await request.json();
     
     const member = await TeamMember.findByIdAndUpdate(
-      params.id,
+      id,
       data,
       { new: true, runValidators: true }
     );
@@ -35,12 +36,13 @@ export async function PUT(
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
+    const { id } = await params;
     
-    const member = await TeamMember.findByIdAndDelete(params.id);
+    const member = await TeamMember.findByIdAndDelete(id);
     
     if (!member) {
       return NextResponse.json(

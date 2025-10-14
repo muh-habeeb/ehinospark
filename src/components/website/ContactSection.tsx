@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Instagram, Facebook, Youtube, Mail, Phone, Github } from 'lucide-react';
+import { Instagram, Youtube, Mail, Phone, Github } from 'lucide-react';
 
 export default function ContactSection() {
   return (

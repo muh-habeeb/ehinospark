@@ -4,14 +4,15 @@ import { Schedule } from '@/lib/models';
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
+    const { id } = await params;
     const data = await request.json();
     
     const scheduleItem = await Schedule.findByIdAndUpdate(
-      params.id,
+      id,
       data,
       { new: true, runValidators: true }
     );
@@ -35,12 +36,13 @@ export async function PUT(
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
+    const { id } = await params;
     
-    const scheduleItem = await Schedule.findByIdAndDelete(params.id);
+    const scheduleItem = await Schedule.findByIdAndDelete(id);
     
     if (!scheduleItem) {
       return NextResponse.json(
