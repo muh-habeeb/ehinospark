@@ -124,10 +124,33 @@
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+}
+
+@font-face {
+  font-family: "dune";
+  src: url("../../public/fonts/Dune_Rise.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "olivia";
+  src: url("../../public/fonts/Olivia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.font-dune {
+  font-family: "dune", sans-serif;
+}
+
+.font-olivia {
+  font-family: "olivia", serif;
 }

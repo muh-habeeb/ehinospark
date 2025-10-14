@@ -48,9 +48,8 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
           {images.map((image, index) => (
             <div
               key={index}
-              className={`carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                }`}
               style={{ pointerEvents: 'none' }} // Non-draggable
             >
               <div
@@ -112,7 +111,9 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider drop-shadow-lg"
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
+
+          // className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
           >
             🌸 {title} 🌸
           </motion.h1>
@@ -120,7 +121,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-lg md:text-xl lg:text-2xl max-w-4xl drop-shadow-md"
+            className="text-lg md:text-xl lg:text-2xl  drop-shadow-md"
           >
             {subtitle}
           </motion.p>

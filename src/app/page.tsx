@@ -129,7 +129,7 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="text-center flex flex-col items-center">
           <Loader className='size-16 animate-spin text-blue-600' />
-          <p className="text-xl font-semibold text-blue-600">Loading ETHNOSPARK...</p>
+          <p className="text-xl font-semibold text-blue-600 capitalize">Hang on a second... <br /> we&apos;ll get things ready for you!</p>
         </div>
       </div>
     );
