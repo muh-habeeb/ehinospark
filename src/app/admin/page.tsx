@@ -34,6 +34,7 @@ import TeamManagement from "@/components/admin/TeamManagement";
 import ScheduleManagement from "@/components/admin/ScheduleManagement";
 import GalleryManagement from "@/components/admin/GalleryManagement";
 import AnnouncementsManagement from "@/components/admin/AnnouncementsManagement";
+import Link from "next/link";
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState({
@@ -162,7 +163,7 @@ export default function AdminDashboard() {
           <div className="flex justify-between items-center h-14 sm:h-16">
             <div className="flex items-center min-w-0 flex-1">
               <h1 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent truncate">
-                ETHNOSPARK Admin
+                <Link href="/admin">{`ETHNOSPARK Admin`}</Link>
               </h1>
             </div>
             <div className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0">
