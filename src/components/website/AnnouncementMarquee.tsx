@@ -11,8 +11,9 @@ export default function AnnouncementMarquee({
 
   // Create a continuous string of all announcements with gaps
   const marqueeContent = announcements
+    .sort((a, b) => a._id.localeCompare(b._id))
     .map((announcement) => announcement.text)
-    .join("  |   ");
+    .join("  \u00A0 \u00A0 \u00A0 | \u00A0 \u00A0 \u00A0 "); // Adding spaces and a separator
 
   return (
     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 overflow-hidden relative mt-16 hover-pause-marquee">
@@ -23,8 +24,7 @@ export default function AnnouncementMarquee({
         <div className="flex-1 overflow-hidden">
           <div className="marquee-container">
             <div className="marquee-text">
-              {marqueeContent}
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {marqueeContent} <span className="border-l-3 w-5 h-5 border-slate-800  mx-4"></span>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function AnnouncementMarquee({
 
         .marquee-text {
           display: inline-block;
-          animation: marquee 60s linear infinite;
+          animation: marquee 20s linear infinite;
           font-size: 1.125rem;
           font-weight: 500;
         }

@@ -76,13 +76,13 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [heroRes, programsRes, schedulesRes, galleryRes, teamRes, announcementsRes] = await Promise.all([
+        const [heroRes,announcementsRes, programsRes, schedulesRes, galleryRes, teamRes ] = await Promise.all([
           fetch('/api/hero'),
+          fetch('/api/announcements'),
           fetch('/api/programs'),
           fetch('/api/schedules'),
           fetch('/api/gallery'),
           fetch('/api/team'),
-          fetch('/api/announcements')
         ]);
 
         if (heroRes.ok) {
