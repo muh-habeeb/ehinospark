@@ -154,6 +154,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "bitsumis";
+  src: url("../../public/fonts/BITSUMIS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "rokel";
+  src: url("../../public/fonts/rockel-bl0x5.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .font-dune {
   font-family: "dune", sans-serif;
 }

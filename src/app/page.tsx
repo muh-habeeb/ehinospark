@@ -12,6 +12,7 @@ import TeamSection from '@/components/website/TeamSection';
 import ContactSection from '@/components/website/ContactSection';
 import Footer from '@/components/website/Footer';
 import { Loader } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface HeroData {
   title: string;
@@ -129,7 +130,13 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="text-center flex flex-col items-center">
           <Loader className='size-16 animate-spin text-blue-600' />
-          <p className="text-xl font-semibold text-blue-600 capitalize">Hang on a second... <br /> we&apos;ll get things ready for you!</p>
+          <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0 }}
+          >
+            <p className="text-xl font-semibold text-blue-600 capitalize">Hang on a second... <br /> we&apos;ll get things ready for you!</p> 
+          </motion.div>
         </div>
       </div>
     );
