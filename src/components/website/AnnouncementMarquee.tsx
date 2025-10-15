@@ -39,13 +39,13 @@ export default function AnnouncementMarquee({
 
         .marquee-text {
           display: inline-block;
-          animation: marquee 20s linear infinite;
+          animation: marquee 60s linear infinite;
           font-size: 1.125rem;
           font-weight: 500;
         }
         @media screen and (max-width: 640px) {
           .marquee-text {
-            animation: marquee 80s linear infinite;
+            animation: marquee 20s linear infinite;
             font-size: 0.875rem;
             font-weight: 500;
           }
