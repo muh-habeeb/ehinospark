@@ -1,4 +1,4 @@
-import { Youtube } from "lucide-react";
+import { Globe, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -15,9 +15,9 @@ export default function Footer() {
           Developed with ❤️ |{"   "}
           <Link
             className="underline inline-block text-red-500 hover:scale-110 "
-            href="https://youtube.com/coding_with_mayavi0"
+            href="https://muh-habeeb.vercel.app"
           >
-            <Youtube />
+            <Globe />
           </Link>
         </p>
       </div>
