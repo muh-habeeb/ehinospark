@@ -1,5 +1,21 @@
 import ImageKit from 'imagekit';
-import sharp from 'sharp';
+
+// Helper function to dynamically import sharp
+async function getSharp() {
+  // Check if Sharp is disabled via environment variable
+  if (process.env.DISABLE_SHARP === 'true') {
+    console.log('Sharp disabled via DISABLE_SHARP environment variable');
+    return null;
+  }
+  
+  try {
+    const sharpModule = await import('sharp');
+    return sharpModule.default;
+  } catch {
+    console.warn('Sharp not available - continuing without image optimization');
+    return null;
+  }
+}
 
 // Validate environment variables
 const requiredEnvVars = {
@@ -37,25 +53,39 @@ export const uploadImage = async (
   try {
     console.log(`Starting image upload: ${fileName} to folder: ${folder}`);
     
-    // Convert image to WebP format for optimization
-    const optimizedBuffer = await sharp(file)
-      .webp({ quality: 80 })
-      .resize(1920, null, { 
-        withoutEnlargement: true,
-        fit: 'inside'
-      })
-      .toBuffer();
-
-    console.log(`Image optimized: ${optimizedBuffer.length} bytes`);
+    // Try to optimize image with Sharp if available
+    let optimizedBuffer = file;
+    const sharp = await getSharp();
+    
+    if (sharp) {
+      try {
+        console.log('Optimizing image with Sharp...');
+        optimizedBuffer = await sharp(file)
+          .webp({ quality: 80 })
+          .resize(1920, null, { 
+            withoutEnlargement: true,
+            fit: 'inside'
+          })
+          .toBuffer();
+        console.log(`Image optimized: ${optimizedBuffer.length} bytes`);
+      } catch (sharpError) {
+        console.warn('Sharp optimization failed, using original file:', sharpError);
+        optimizedBuffer = file;
+      }
+    } else {
+      console.log('Sharp not available - uploading original file');
+    }
 
     const uploadResponse = await imagekit.upload({
       file: optimizedBuffer,
-      fileName: `${fileName}.webp`,
+      fileName: sharp ? `${fileName}.webp` : fileName,
       folder: folder,
       useUniqueFileName: true,
-      transformation: {
-        pre: 'w-1920,q-80,f-webp'
-      }
+      ...(sharp && {
+        transformation: {
+          pre: 'w-1920,q-80,f-webp'
+        }
+      })
     });
 
     console.log(`Upload successful: ${uploadResponse.url}`);

@@ -1,6 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { uploadImage } from '@/lib/imagekit';
 
+export async function GET() {
+  return NextResponse.json(
+    { 
+      error: 'This endpoint only accepts POST requests for file uploads',
+      allowedMethods: ['POST']
+    },
+    { status: 405 }
+  );
+}
+
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();

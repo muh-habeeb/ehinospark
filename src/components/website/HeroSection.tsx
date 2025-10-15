@@ -55,7 +55,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
               <div
                 className="w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(${image.url})`,
+                  backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.), rgba(0, 0, 0, 0.5)), url(${image.url})`,
                 }}
               />
             </div>
@@ -105,23 +105,27 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
       */}
 
       {/* Static Content Overlay */}
-      <div className="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
-        <div className="backdrop-blur-sm bg-black/20 rounded-2xl p-8 border border-white/20">
+      <div className="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4 backdrop-blur-[2px] bg-black/20  p-8 ">
+        {/* <div className="backdrop-blur-sm bg-black/20 rounded-2xl p-8 border border-white/20"> */}
+        <div className="">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider drop-shadow-lg font-anurati"
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider drop-shadow-lg font-anurati relative uppercase" 
 
           // className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
           >
-            🌸 {title} 🌸
+            {title} 
+            <br />
+          {/* <span className='font-semibold text-[12px] absolute sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[30px] right-1'>2025</span> */}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-lg md:text-xl lg:text-2xl  drop-shadow-md"
+            // className="text-lg md:text-xl lg:text-2xl  drop-shadow-md font-olivia mt-14"
+            className="text-lg md:text-xl lg:text-2xl  drop-shadow-md font-olivia "
           >
             {subtitle}
           </motion.p>

@@ -48,21 +48,20 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-lg'
             : 'bg-white/90 backdrop-blur-sm'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <motion.h1
               whileHover={{ scale: 1.05 }}
-              className="text-xl md:text-2xl font-bold text-blue-600 cursor-pointer"
+              className="text-xl md:text-2xl font-bold text-blue-600 cursor-pointer "
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              ETHNOSPARK 2025
+              ETHNOSPARK
             </motion.h1>
 
             {/* Desktop Navigation */}

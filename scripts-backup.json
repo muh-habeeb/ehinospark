@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "npm install --include=optional sharp",
+    "build:production": "npm run postinstall && npm run build",
+    "deploy:vercel": "npm run build:production",
+    "fix:sharp": "npm install --include=optional sharp --os=linux --cpu=x64"
+  }
+}
