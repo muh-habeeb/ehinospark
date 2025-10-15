@@ -167,7 +167,7 @@ export default function GalleryManagement() {
 
     return (
         <div className="space-y-6">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
                     <h2 className="text-2xl font-bold text-white flex items-center gap-2">
                         <Images className="h-6 w-6" />
@@ -175,14 +175,14 @@ export default function GalleryManagement() {
                     </h2>
                     <p className="text-gray-400">Manage event photos and gallery images</p>
                 </div>
-                <div className="flex gap-3 items-center">
+                <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center w-full sm:w-auto">
                     <Input
                         placeholder="Search images..."
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-64 bg-gray-800 border-gray-700 text-white"
+                        className="w-full sm:w-64 bg-gray-800 border-gray-700 text-white"
                     />
-                    <Button onClick={() => openDialog()} className="bg-blue-600 hover:bg-blue-700">
+                    <Button onClick={() => openDialog()} className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap">
                         <Plus className="h-4 w-4 mr-2" />
                         Add Image
                     </Button>
