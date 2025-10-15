@@ -110,7 +110,7 @@ export default function Navbar() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group  cursor-pointer"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>

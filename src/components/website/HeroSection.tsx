@@ -112,7 +112,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider   drop-shadow-lg font-anurati relative uppercase"
+            className="text-[35px] sm:text-4xl md:text-5xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider   drop-shadow-xl drop-shadow-[#c46628]  font-anurati relative uppercase"
 
           // className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
           >
@@ -125,7 +125,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
             // className="text-lg md:text-xl lg:text-2xl  drop-shadow-md font-olivia mt-14"
-            className="text-lg md:text-xl lg:text-2xl  drop-shadow-md font-olivia "
+            className="text-[12px] sm:text-sm md:text-xl lg:text-2xl tracking-[2px] drop-shadow-md font-olivia"
           >
             {subtitle}
           </motion.p>
