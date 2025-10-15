@@ -87,7 +87,7 @@ export default function AdminLogin() {
                   id="username"
                   name="username"
                   type="text"
-                  value={formData.username}
+                  value={formData.username.trim()}
                   onChange={handleInputChange}
                   placeholder="Enter your username"
                   required
