@@ -168,6 +168,12 @@
   font-style: normal;
   font-display: swap;
 }
+.font-bitsumis {
+  font-family: "bitsumis", sans-serif;
+}
+.font-rokel {
+  font-family: "rokel", sans-serif;
+}
 .font-dune {
   font-family: "dune", sans-serif;
 }
@@ -178,3 +184,30 @@
 .font-anurati {
   font-family: "anurati", serif;
 }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    /* Improve touch targets for mobile */
+    .mobile-touch-target {
+      min-height: 48px;
+      min-width: 48px;
+    }
+    
+    /* Ensure mobile menu is above everything */
+    .mobile-menu-overlay {
+      z-index: 9999;
+    }
+    
+    /* Smooth scrolling for mobile */
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  }/* Ensure buttons are accessible */
+button:focus,
+a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* End of utilities layer */
