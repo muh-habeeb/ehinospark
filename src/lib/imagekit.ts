@@ -1,6 +1,22 @@
 import ImageKit from 'imagekit';
 import sharp from 'sharp';
 
+// Validate environment variables
+const requiredEnvVars = {
+  IMAGEKIT_PUBLIC_KEY: process.env.IMAGEKIT_PUBLIC_KEY,
+  IMAGEKIT_PRIVATE_KEY: process.env.IMAGEKIT_PRIVATE_KEY,
+  IMAGEKIT_URL_ENDPOINT: process.env.IMAGEKIT_URL_ENDPOINT
+};
+
+// Check for missing environment variables
+const missingVars = Object.entries(requiredEnvVars)
+  .filter(([, value]) => !value)
+  .map(([key]) => key);
+
+if (missingVars.length > 0) {
+  throw new Error(`Missing required environment variables: ${missingVars.join(', ')}`);
+}
+
 const imagekit = new ImageKit({
   publicKey: process.env.IMAGEKIT_PUBLIC_KEY!,
   privateKey: process.env.IMAGEKIT_PRIVATE_KEY!,
@@ -19,6 +35,8 @@ export const uploadImage = async (
   folder: string = 'ethnospark'
 ): Promise<UploadResult> => {
   try {
+    console.log(`Starting image upload: ${fileName} to folder: ${folder}`);
+    
     // Convert image to WebP format for optimization
     const optimizedBuffer = await sharp(file)
       .webp({ quality: 80 })
@@ -27,6 +45,8 @@ export const uploadImage = async (
         fit: 'inside'
       })
       .toBuffer();
+
+    console.log(`Image optimized: ${optimizedBuffer.length} bytes`);
 
     const uploadResponse = await imagekit.upload({
       file: optimizedBuffer,
@@ -38,14 +58,37 @@ export const uploadImage = async (
       }
     });
 
+    console.log(`Upload successful: ${uploadResponse.url}`);
+
     return {
       url: uploadResponse.url,
       fileId: uploadResponse.fileId,
       name: uploadResponse.name
     };
   } catch (error) {
-    console.error('ImageKit upload error:', error);
-    throw new Error('Failed to upload image');
+    console.error('ImageKit upload error details:', {
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : undefined,
+      fileName,
+      folder,
+      timestamp: new Date().toISOString()
+    });
+    
+    // Provide more specific error messages
+    let errorMessage = 'Failed to upload image';
+    if (error instanceof Error) {
+      if (error.message.includes('401') || error.message.includes('Unauthorized')) {
+        errorMessage = 'ImageKit authentication failed - check API keys';
+      } else if (error.message.includes('400') || error.message.includes('Bad Request')) {
+        errorMessage = 'Invalid image file or upload parameters';
+      } else if (error.message.includes('413') || error.message.includes('too large')) {
+        errorMessage = 'Image file is too large';
+      } else {
+        errorMessage = error.message;
+      }
+    }
+    
+    throw new Error(errorMessage);
   }
 };
 
