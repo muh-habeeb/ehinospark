@@ -61,7 +61,7 @@ export default function Home() {
     title: 'ETHNOSPARK 2025',
     subtitle: 'College Ethnic Day – Celebrating Culture, Unity & Diversity',
     images: [{
-      url: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429',
+      url: 'https://images.unsplash.com/photo-1617066783456-65a5eeb48950',
       alt: 'Hero Image'
     }]
   });
