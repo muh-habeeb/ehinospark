@@ -147,10 +147,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "anurathi";
+  src: url("../../public/fonts/Anurati-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .font-dune {
   font-family: "dune", sans-serif;
 }
 
 .font-olivia {
   font-family: "olivia", serif;
+}
+.font-anurathi {
+  font-family: "anurathi", serif;
 }
