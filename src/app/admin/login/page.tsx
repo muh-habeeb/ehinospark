@@ -145,11 +145,11 @@ export default function AdminLogin() {
                 </Button>
               </motion.div>
             </form>
-            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+            {/* <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <p className="text-sm text-blue-700 font-medium mb-1">Default Credentials:</p>
               <p className="text-xs text-blue-600">Username: admin</p>
               <p className="text-xs text-blue-600">Password: admin123</p>
-            </div>
+            </div> */}
           </CardContent>
         </Card>
       </motion.div>
