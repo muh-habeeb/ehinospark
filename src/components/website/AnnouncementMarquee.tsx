@@ -25,7 +25,6 @@ export default function AnnouncementMarquee({
             <div className="marquee-text">
               {marqueeContent}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              {marqueeContent}
             </div>
           </div>
         </div>
