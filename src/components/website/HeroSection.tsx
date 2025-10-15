@@ -111,7 +111,7 @@ export default function HeroSection({ title, subtitle, images }: HeroSectionProp
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl font-bold mb-4 tracking-wider drop-shadow-lg font-anurati"
 
           // className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider drop-shadow-lg font-dune"
           >
