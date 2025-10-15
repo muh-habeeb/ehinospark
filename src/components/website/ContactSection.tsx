@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Instagram, Youtube, Mail, Phone, Github } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function ContactSection() {
   return (
@@ -15,7 +16,7 @@ export default function ContactSection() {
           className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Contact Us</h2>
-          
+
           <div className="space-y-6">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -26,7 +27,7 @@ export default function ContactSection() {
             >
               🎉 Cultural Committee - The Yenepoya College
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +44,7 @@ export default function ContactSection() {
                 <span>+91 98765 43210</span>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -74,14 +75,31 @@ export default function ContactSection() {
                 <motion.a
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  href="https://youtube.com/coding_with_mayavi0"
+                  href="https://youtube.com/@coding_with_mayavi0"
                   className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
                 >
                   <Youtube className="w-6 h-6" />
                 </motion.a>
               </div>
             </motion.div>
+
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-8 text-xl text-white/70 ring-0 ">
+            Send Photos {'>'} to Update Gallery
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              href="https://shorturl.at/HUYU1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full "
+            > <FaWhatsapp className=" rounded-full inline-block size-8 mb-1 ml-1 hover:scale-110 transition-all " /></motion.a>
+          </motion.div>
         </motion.div>
       </div>
     </section>
