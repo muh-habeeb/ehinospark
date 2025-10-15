@@ -14,7 +14,7 @@ export default function Footer() {
         >
           Developed with ❤️ |{"   "}
           <Link
-            className="underline inline-block text-red-500 hover:scale-110 "
+            className="underline inline-block text-blue-500 hover:scale-110 "
             href="https://muh-habeeb.vercel.app"
           >
             <Globe />
