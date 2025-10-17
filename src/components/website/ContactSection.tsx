@@ -41,7 +41,7 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <span>+91 98765 43210</span>
+                <span>+91 9656 80 5212</span>
               </div>
             </motion.div>
 
